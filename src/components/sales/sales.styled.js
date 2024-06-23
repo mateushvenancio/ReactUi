@@ -10,13 +10,13 @@ export const SalesInnerContainer = styled.div`
     width: ${({ width }) => width};
 
     border-bottom: ${({ borderBottom }) => {
-        return borderBottom ? 'solid gray 1px' : 'none';
+        return borderBottom ? 'solid #E7E7E7 1px' : 'none';
     }};
     border-right: ${({ borderRight }) => {
-        return borderRight ? 'solid gray 1px' : 'none';
+        return borderRight ? 'solid #E7E7E7 1px' : 'none';
     }};
     border-left: ${({ borderLeft }) => {
-        return borderLeft ? 'solid gray 1px' : 'none';
+        return borderLeft ? 'solid #E7E7E7 1px' : 'none';
     }};
 `;
 
@@ -33,6 +33,7 @@ export const Column = styled.div`
 `;
 
 export const Title = styled.div`
+    color: #2d2d2d;
     font-weight: bold;
 `;
 

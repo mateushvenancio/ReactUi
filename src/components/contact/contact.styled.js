@@ -6,7 +6,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const TopTitle = styled.div`
-    color: gray;
+    color: #959292;
     text-transform: uppercase;
     font-weight: bold;
 `;

@@ -12,7 +12,7 @@ export default function Contact() {
                 <Column>
                     <SubTitle>Support</SubTitle>
                     <Row>
-                        <FontAwesomeIcon icon={faEnvelope} color="#333333" />
+                        <FontAwesomeIcon icon={faEnvelope} color="#555555" />
                         support@feefo.com
                         <Expand />
                         020 3362 4208

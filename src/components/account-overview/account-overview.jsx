@@ -1,6 +1,6 @@
 import React from 'react';
 import { Contact, Sales } from '..'
-import { AccountOverviewContainer, Row, Title } from './account-overview.styled';
+import { AccountOverviewContainer, Row, Spacer, Title } from './account-overview.styled';
 
 export const AccountOverview = ({ data }) => {
     console.log(data);
@@ -11,6 +11,7 @@ export const AccountOverview = ({ data }) => {
                 <Title>Account Overview</Title>
                 <Contact />
             </Row>
+            <Spacer height='45px' />
             <Sales />
         </AccountOverviewContainer>
     )

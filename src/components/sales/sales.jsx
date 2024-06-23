@@ -23,13 +23,13 @@ export default function Sales() {
         <Row>
             <SalesInnerContainer borderRight width='50%'>
                 <Column align='start'>
-                    <Text fontSize='32px' color='green' bold >0%</Text>
+                    <Text fontSize='32px' color='#00A152' bold >0%</Text>
                     <Text transform='uppercase' bold>upload success</Text>
                 </Column>
             </SalesInnerContainer>
             <SalesInnerContainer width='50%'>
                 <Column align='start'>
-                    <Text fontSize='32px' color='green' bold >0%</Text>
+                    <Text fontSize='32px' color='#00A152' bold >0%</Text>
                     <Text transform='uppercase' bold>Lines saved</Text>
                 </Column>
             </SalesInnerContainer>
