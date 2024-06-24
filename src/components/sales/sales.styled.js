@@ -34,7 +34,7 @@ export const Column = styled.div`
 
 export const Title = styled.div`
     color: #2d2d2d;
-    font-weight: bold;
+    font-weight: 900;
 `;
 
 export const Expand = styled.div`

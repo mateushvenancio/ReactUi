@@ -4,12 +4,15 @@ import Sales from './sales';
 
 test('renders Sales component', () => {
   const sales = {
-    uploads: 0,
-    linesAdded: 0,
-    uploadSuccess: 0,
-    linesSaved: 0,
+    uploads: 10,
+    uploadSuccess: 5,
+    linesAdded: 10,
+    linesSaved: 10,
   };
 
   const { getByText } = render(<Sales sales={sales} />);
   expect(getByText(/Sales/i)).toBeInTheDocument();
+
+  expect(getByText(/50%/i)).toBeInTheDocument();
+  expect(getByText(/100%/i)).toBeInTheDocument();
 });

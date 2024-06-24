@@ -1,19 +1,21 @@
-import { AvatarSquare, Column, ContactContainer, Expand, Row, SubTitle, TopTitle } from "./contact.styled";
+import PropTypes from 'prop-types';
 
+import { AvatarSquare, Column, ContactContainer, Expand, Row, SubTitle, TopTitle } from "./contact.styled";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-export default function Contact() {
+const Contact = (props) => {
+    const { name, email } = props
     return <ContactContainer>
         <Column>
             <TopTitle>Your Feefo Support Contact</TopTitle>
             <Row>
-                <AvatarSquare>S</AvatarSquare>
+                <AvatarSquare>{name[0]}</AvatarSquare>
                 <Column>
-                    <SubTitle>Support</SubTitle>
+                    <SubTitle>{name}</SubTitle>
                     <Row>
                         <FontAwesomeIcon icon={faEnvelope} color="#555555" />
-                        support@feefo.com
+                        {email}
                         <Expand />
                         020 3362 4208
                     </Row>
@@ -22,3 +24,10 @@ export default function Contact() {
         </Column>
     </ContactContainer>
 }
+
+Contact.propTypes = {
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+}
+
+export default Contact
