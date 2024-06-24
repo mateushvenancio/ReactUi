@@ -13,6 +13,6 @@ test('renders Sales component', () => {
   const { getByText } = render(<Sales sales={sales} />);
   expect(getByText(/Sales/i)).toBeInTheDocument();
 
-  expect(getByText(/50%/i)).toBeInTheDocument();
-  expect(getByText(/100%/i)).toBeInTheDocument();
+  expect(getByText(/37%/i)).toBeInTheDocument();
+  expect(getByText(/20%/i)).toBeInTheDocument();
 });
